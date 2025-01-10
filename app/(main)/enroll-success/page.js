@@ -10,6 +10,8 @@ import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
+export const dynamic = 'force-dynamic';
+
 const PaymentSuccessPage = async ({ searchParams: { session_id, courseId } }) => {
     const { user } = await getServerSession();
     if (!user.email) {
