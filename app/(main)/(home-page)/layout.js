@@ -1,5 +1,7 @@
 import HeroSection from '../_components/HeroSection/HeroSection';
 
+export const dynamic = 'force-dynamic';
+
 const HomePageLayout = ({ category, course, instructor }) => {
     return (
         <>
